@@ -5,68 +5,52 @@
 #  * - Múltiplos de 5 por la palabra "buzz".
 #  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
 
-for number in range(1,101):
-    if number % 3 == 0 and number % 5 == 0:
-        print("Fizzbuzz")
-    elif number % 3 == 0:
-        print("Fizz")
-    elif number % 5 == 0:
-        print("Buzz")
+numero = int(input("Digite el numero: "))
+
+while numero <= 100:
+    if numero % 3 == 0 and numero % 5 == 0:
+        print(f"El numero es {numero} FizzBuzz")
+    elif numero % 3 == 0:
+        print(f"El numero {numero} Fizz")
+    elif numero % 5 == 0:
+        print(f"El numero {numero} Buzz")
     else:
-        print(number)
+        print(f"El numero {numero} no es divisble")
+        numero += 1
+    numero = int(input())
 
 
 
-numero = int(input("Introduce el numero: "))
 
-while numero != 0:
-    if numero % 2 == 0:
-        print(f"El numero {numero} es par")
+
+
+
+
+
+
+
+for n in range(1,100):
+    if n % 3 == 0 and n % 5 == 0:
+        print(f"El numero {n} es FizzBuzz")
+    elif n % 3 == 0:
+        print(f"El numero {n} es Fizz")
+    elif n % 5 == 0:
+        print(f"El numero {n} es Buzz")
     else:
-        print(f"El numero {numero} es impar")
-    numero = int(input("Introduce otro numero o oprime 0 para salir: "))
+        print(n)
 
 
-while True:
-    print("Operaciones disponibles: ")
-    print(" ")
-    print("[1] Suma")
-    print("[2] Resta")
-    print("[3] Multiplicación")
-    print("[4] Division")
-    print("[5] Salir")
-    opcion = 0
 
-    opcion = int(input("Seleccone la operacion que desea realizar: "))
 
-    if opcion == 5:
-        break
+# escribe un programa por consola que me muestre si el numero es par o imapr usando el ciclo while
 
-    numero1 = float(input("Ingrese el primer numero: "))
-    numero2 = float(input("Ingrese el Segundo numero: "))
+num = int(input("Digite el número--:"))
 
-    if opcion == 1:
-        resultado = numero1 + numero2
-        print("El resultado de la suma es: ",resultado)
-        elif opcion == 2:
-            resultado = numero1 + numero2
-            print("El resultado de la resta es: ",resultado)
-        elif opcion == 3:
-            resultado = numero1 * numero2
-            print("El resulatdo de la multiplicacion es: ",resultado)
-        elif opcion == 4:
-            resultado = numero1 / numero2
-            print("El resultado de la division es: ",resultado)
-        else:
-            print("Opcion invalida (error)")
-            print(" ")
-if opcion == 0:
-    opcion = opcion+1
-if opcion != 0:
-    print("Desea seguir con las operaciones")
-    print(" ")
-    print("[0] Si")
-    print("[5] No")
-    opcion = int(input())
-    
+while num != 0:
+    if num % 2 == 0:
+        print(f"El número {num} es par")
+    else:
+        print(f"El número {num} es impar")
+    num = int(input())
+
 
