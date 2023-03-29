@@ -12,45 +12,37 @@ while numero <= 100:
         print(f"El numero es {numero} FizzBuzz")
     elif numero % 3 == 0:
         print(f"El numero {numero} Fizz")
-    elif numero % 5 == 0:
+    elif numero % 5 == 0:                                     #Usando el ciclo while#
         print(f"El numero {numero} Buzz")
     else:
         print(f"El numero {numero} no es divisble")
-        numero += 1
     numero = int(input())
 
+print(" ")
 
-
-
-
-
-
-
-
-
+n = int(input("Diguite el numero: "))
 
 for n in range(1,100):
     if n % 3 == 0 and n % 5 == 0:
         print(f"El numero {n} es FizzBuzz")
-    elif n % 3 == 0:
+    elif n % 3 == 0:                                    #Usando el ciclo for#
         print(f"El numero {n} es Fizz")
     elif n % 5 == 0:
         print(f"El numero {n} es Buzz")
     else:
-        print(n)
+        print(f"El numero {n} no es divisible ni por 5 ni 3")
 
+# Escribe un programa por consola que me muestre si el numero es par o imapr usando el ciclo while
 
-
-
-# escribe un programa por consola que me muestre si el numero es par o imapr usando el ciclo while
-
-num = int(input("Digite el número--:"))
+num = int(input("Digite el número--: "))
 
 while num != 0:
     if num % 2 == 0:
         print(f"El número {num} es par")
+    elif num == 0:
+        break
     else:
         print(f"El número {num} es impar")
-    num = int(input())
+    num = int(input("Diguite un nuevo numero: "))
 
 
